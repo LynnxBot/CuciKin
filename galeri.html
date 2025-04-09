@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri - CuciKin</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="font-sans min-h-screen flex flex-col">
+    <nav class="bg-blue-600 text-white p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">CuciKin</h1>
+            <div class="md:hidden">
+                <button id="menuToggle" class="focus:outline-none flex items-center">
+                    <svg id="hamburgerIcon" class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+            <ul id="navMenu" class="hidden md:flex space-x-6">
+                <li><a href="index.html" class="hover:text-gray-200">Beranda</a></li>
+                <li><a href="layanan.html" class="hover:text-gray-200">Layanan</a></li>
+                <li><a href="booking.html" class="hover:text-gray-200">Booking</a></li>
+                <li><a href="jadwal.html" class="hover:text-gray-200">Jadwal</a></li>
+                <li><a href="galeri.html" class="hover:text-gray-200">Galeri</a></li>
+                <li><a href="kontak.html" class="hover:text-gray-200">Kontak</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="flex-1">
+        <section class="container mx-auto py-10">
+            <h1 class="section-title">Galeri</h1>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <div class="card">
+                    <h2 class="text-xl font-semibold mb-2">Sebelum dan Sesudah</h2>
+                    <img src="images/sebelum.webp" alt="Motor sebelum dan sesudah dicuci" class="w-full h-48 object-cover rounded-md img-responsive">
+                    <p class="text-gray-600 mt-2 text-sm">Perubahan drastis dari kotor ke bersih!</p>
+                </div>
+                <div class="card">
+                    <h2 class="text-xl font-semibold mb-2">Tim Kami</h2>
+                    <img src="images/Team.webp" alt="Tim CuciKin sedang bekerja" class="w-full h-48 object-cover rounded-md img-responsive">
+                    <p class="text-gray-600 mt-2 text-sm">Tim profesional kami siap melayani Anda.</p>
+                </div>
+                <div class="card">
+                    <h2 class="text-xl font-semibold mb-2">Proses Cuci</h2>
+                    <img src="images/Proses1.webp" alt="Proses pencucian motor" class="w-full h-48 object-cover rounded-md img-responsive">
+                    <p class="text-gray-600 mt-2 text-sm">Proses cuci yang teliti dan cepat.</p>
+                </div>
+            </div>
+            <div class="mt-10">
+                <h2 class="section-title">Testimoni Pelanggan</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                    <div class="testimonial-card">
+                        <span class="quote-icon">“</span>
+                        <div class="flex items-center mb-2">
+                            <img src="images/avatar1.webp" alt="Avatar Budi" class="avatar">
+                            <div>
+                                <p>"Layanan cepat dan motor saya jadi kinclong! Terima kasih CuciKin!"</p>
+                                <p class="author">- Budi</p>
+                            </div>
+                        </div>
+                        <div class="rating">★★★★★</div>
+                    </div>
+                    <div class="testimonial-card">
+                        <span class="quote-icon">“</span>
+                        <div class="flex items-center mb-2">
+                            <img src="images/avatar2.webp" alt="Avatar Ani" class="avatar">
+                            <div>
+                                <p>"Pelayanan ramah, harga terjangkau. Pasti balik lagi!"</p>
+                                <p class="author">- Ani</p>
+                            </div>
+                        </div>
+                        <div class="rating">★★★★☆</div>
+                    </div>
+                    <div class="testimonial-card">
+                        <span class="quote-icon">“</span>
+                        <div class="flex items-center mb-2">
+                            <img src="images/avatar3.webp" alt="Avatar Dedi" class="avatar">
+                            <div>
+                                <p>"Hasilnya memuaskan, motor seperti baru lagi!"</p>
+                                <p class="author">- Dedi</p>
+                            </div>
+                        </div>
+                        <div class="rating">★★★★★</div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-6 text-center">
+                <a href="booking.html" class="inline-block bg-blue-500 text-white px-6 py-3 rounded hover:bg-blue-600 transition-colors">Booking Sekarang</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-blue-600 text-white p-6 text-center">
+        <div class="container mx-auto">
+            <div class="mb-4">
+                <p class="text-white">© 2025 CuciKin. All rights reserved.</p>
+                <p class="text-white">Jl. Cuci Bersih No. 123, Jakarta</p>
+                <p class="text-white">Telepon: 0812-3456-7890 | WhatsApp: 0812-3456-7890</p>
+            </div>
+            <div class="flex justify-center space-x-4">
+                <a href="#" class="hover:text-gray-200 text-white">Facebook</a>
+                <a href="#" class="hover:text-gray-200 text-white">Instagram</a>
+                <a href="#" class="hover:text-gray-200 text-white">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CuciKin - Cuci Motor Cepat dan Bersih</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="font-sans min-h-screen flex flex-col">
+    <nav class="bg-blue-600 text-white p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">CuciKin</h1>
+            <div class="md:hidden">
+                <button id="menuToggle" class="focus:outline-none flex items-center">
+                    <svg id="hamburgerIcon" class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+            <ul id="navMenu" class="hidden md:flex space-x-6">
+                <li><a href="index.html" class="hover:text-gray-200">Beranda</a></li>
+                <li><a href="layanan.html" class="hover:text-gray-200">Layanan</a></li>
+                <li><a href="booking.html" class="hover:text-gray-200">Booking</a></li>
+                <li><a href="jadwal.html" class="hover:text-gray-200">Jadwal</a></li>
+                <li><a href="galeri.html" class="hover:text-gray-200">Galeri</a></li>
+                <li><a href="kontak.html" class="hover:text-gray-200">Kontak</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="flex-1">
+        <header class="bg-cover bg-center h-96" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/hero.webp');">
+            <div class="h-full flex items-center justify-center text-white text-center bg-black bg-opacity-50">
+                <div class="animate-fadeIn">
+                    <h1 class="text-4xl font-bold">Cuci Motor Cepat dan Bersih di CuciKin</h1>
+                    <p class="mt-4 text-lg">Layanan Cuci Motor Terpercaya dan Profesional</p>
+                    <a href="booking.html" class="mt-6 inline-block bg-white text-blue-600 px-6 py-3 rounded hover:bg-gray-200 transition-colors">Booking Sekarang</a>
+                </div>
+            </div>
+        </header>
+
+        <section class="container mx-auto py-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 card">
+                    <h2 class="text-2xl font-semibold mb-4 text-gray-900">Promo Spesial</h2>
+                    <img src="images/Promo.webp" alt="Promo Cuci Motor" class="w-full h-48 object-cover rounded-md mb-4" loading="lazy" width="800" height="400">
+                    <p class="mb-4 text-gray-600">Dapatkan diskon 20% untuk cuci motor setiap Selasa! Syarat dan ketentuan berlaku.</p>
+                    <a href="booking.html" class="inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors">Booking Sekarang</a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 card">
+                    <h2 class="text-2xl font-semibold mb-4 text-gray-900">Jam Operasional</h2>
+                    <p class="text-gray-600">Senin - Minggu: 08.00 - 20.00 WIB</p>
+                    <p class="text-gray-600">Kami siap melayani Anda setiap hari!</p>
+                    <a href="kontak.html" class="mt-4 inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors">Hubungi Kami</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-blue-600 text-white p-6 text-center">
+        <div class="container mx-auto">
+            <div class="mb-4">
+                <p class="text-white">© 2025 CuciKin. All rights reserved.</p>
+                <p class="text-white">Jl. Cuci Bersih No. 123, Jakarta</p>
+                <p class="text-white">Telepon: 0812-3456-7890 | WhatsApp: 0812-3456-7890</p>
+            </div>
+            <div class="flex justify-center space-x-4">
+                <a href="#" class="hover:text-gray-200 text-white">Facebook</a>
+                <a href="#" class="hover:text-gray-200 text-white">Instagram</a>
+                <a href="#" class="hover:text-gray-200 text-white">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

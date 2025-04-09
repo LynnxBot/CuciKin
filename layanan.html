@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layanan - CuciKin</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gray-100 font-sans min-h-screen flex flex-col">
+    <nav class="bg-blue-600 text-white p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">CuciKin</h1>
+            <div class="md:hidden">
+                <button id="menuToggle" class="focus:outline-none flex items-center">
+                    <svg id="hamburgerIcon" class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+            <ul id="navMenu" class="hidden md:flex space-x-6">
+                <li><a href="index.html" class="hover:text-gray-200">Beranda</a></li>
+                <li><a href="layanan.html" class="hover:text-gray-200">Layanan</a></li>
+                <li><a href="booking.html" class="hover:text-gray-200">Booking</a></li>
+                <li><a href="jadwal.html" class="hover:text-gray-200">Jadwal</a></li>
+                <li><a href="galeri.html" class="hover:text-gray-200">Galeri</a></li>
+                <li><a href="kontak.html" class="hover:text-gray-200">Kontak</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="flex-1">
+        <section class="container mx-auto py-10">
+            <h1 class="section-title">Layanan Cuci Motor</h1>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="card">
+                    <h2 class="text-xl font-semibold mb-2 text-gray-900">Cuci Motor Standar</h2>
+                    <p class="mb-4 text-gray-600">Cuci luar dan dalam, termasuk pembersihan ban dan rantai.</p>
+                    <p class="text-lg font-bold text-gray-800">Rp 30.000</p>
+                    <a href="booking.html" class="mt-4 inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors">Pesan Sekarang</a>
+                </div>
+                <div class="card">
+                    <h2 class="text-xl font-semibold mb-2 text-gray-900">Cuci Motor Standar</h2>
+                    <p class="mb-4 text-gray-600">Cuci luar dan dalam, termasuk pembersihan ban dan rantai.</p>
+                    <p class="text-lg font-bold text-gray-800">Rp 30.000</p>
+                    <a href="booking.html" class="mt-4 inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors">Pesan Sekarang</a>
+                </div>
+                <div class="card">
+                    <h2 class="text-xl font-semibold mb-2 text-gray-900">Cuci Motor Standar</h2>
+                    <p class="mb-4 text-gray-600">Cuci luar dan dalam, termasuk pembersihan ban dan rantai.</p>
+                    <p class="text-lg font-bold text-gray-800">Rp 30.000</p>
+                    <a href="booking.html" class="mt-4 inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors">Pesan Sekarang</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-blue-600 text-white p-6 text-center">
+    <div class="container mx-auto">
+        <div class="mb-4">
+            <p>© 2025 CuciKin. All rights reserved.</p>
+            <p>Jl. Cuci Bersih No. 123, Jakarta</p>
+            <p>Telepon: 0812-3456-7890 | WhatsApp: 0812-3456-7890</p>
+        </div>
+        <div class="flex justify-center space-x-4">
+            <a href="#" class="hover:text-gray-200">Facebook</a>
+            <a href="#" class="hover:text-gray-200">Instagram</a>
+            <a href="#" class="hover:text-gray-200">Twitter</a>
+        </div>
+    </div>
+</footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
