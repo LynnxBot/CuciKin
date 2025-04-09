@@ -1,4 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Flag untuk memastikan observer hanya diinisialisasi sekali
+    let observerInitialized = false;
+
     // Animasi untuk elemen yang masuk
     const elements = document.querySelectorAll('.animate-fadeIn');
     elements.forEach((el, index) => {
@@ -19,12 +22,10 @@ document.addEventListener('DOMContentLoaded', () => {
             e.preventDefault();
             let isValid = true;
 
-        
             [namaError, teleponError, kendaraanError, waktuError].forEach(error => error.classList.add('hidden'));
             konfirmasi.classList.add('hidden');
             loading.classList.remove('hidden');
 
-            
             const nama = document.getElementById('nama').value.trim();
             if (!nama) {
                 namaError.classList.remove('hidden');
@@ -140,16 +141,24 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Animasi saat scroll card
-    const cards = document.querySelectorAll('.card');
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('animate-fadeIn');
-                observer.unobserve(entry.target);
+ 
+    if (!observerInitialized) {
+        const cards = document.querySelectorAll('.card');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && !entry.target.classList.contains('animate-fadeIn')) {
+                    entry.target.classList.add('animate-fadeIn');
+                    observer.unobserve(entry.target); 
+                }
+            });
+        }, { threshold: 0.1 });
+
+        cards.forEach(card => {
+            if (!card.classList.contains('animate-fadeIn')) { 
+                observer.observe(card);
             }
         });
-    }, { threshold: 0.1 });
 
-    cards.forEach(card => observer.observe(card));
+        observerInitialized = true; 
+    }
 });
